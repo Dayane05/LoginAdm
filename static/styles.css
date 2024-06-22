@@ -1,0 +1,84 @@
+body {
+    font-family: system-ui,'Roboto','Segoe UI','Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #121213;
+    color: white;
+}
+
+.container {
+    display: flex;
+    border-radius: 10px;
+    width: 70%;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.left {
+    flex: 1;
+    background-color: #89A1EF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left img {
+    width: 80%;
+}
+
+.right {
+    flex: 1;
+    padding: 40px;
+    background-color: #1e1e1e;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.right h1 {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.right p {
+    margin-bottom: 20px;
+    color: #bbb;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+}
+
+input {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: solid #474747 2px;
+    border-radius: 5px;
+    background-color: #333;
+    color: white;
+}
+
+button {
+    padding: 10px;
+    border: solid #89A1EF 5px;
+    border-radius: 5px;
+    background-color: #1E1E1E;
+    font-size: medium;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color:#89A1EF;
+}

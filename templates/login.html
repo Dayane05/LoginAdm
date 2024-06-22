@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <title>Login - Admin</title>
+</head>
+<body>
+    <!-- Container para os dois lados esquerdo e direito -->
+    <div class="container">
+        <div class="left">
+            <img src="{{ url_for('static', filename='logoo.png') }}" alt="Logo">
+        </div>
+        <div class="right">
+            <h1>Acesse os relatórios</h1>
+            <p>Acesso liberado apenas para o administrador</p>
+            <form method="POST">
+                <label for="name">Nome</label>
+                <input type="text" id="name" name="name" required>
+                <label for="password">Senha</label>
+                <input type="password" id="password" name="password" required>
+                <button type="submit">Entrar</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
